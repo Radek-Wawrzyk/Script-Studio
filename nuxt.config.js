@@ -12,7 +12,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:700,900|Roboto:400,500,700&display=swap&subset=latin-ext' },
     ]
   },
   /*
@@ -23,6 +24,7 @@ export default {
   ** Global CSS
   */
   css: [
+    './styles/Main.scss',
   ],
   /*
   ** Plugins to load before mounting the App
@@ -38,13 +40,18 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/style-resources',
     '@nuxtjs/axios',
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
+  styleResources: {
+    scss: [
+      './styles/Modules/Variables.scss' // use underscore "_" & also file extension ".scss"
+    ],
+  },
   axios: {
   },
   /*
