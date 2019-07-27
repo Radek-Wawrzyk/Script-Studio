@@ -24,17 +24,17 @@
           </a>
         </li>
         <li class="navigation__menu-item">
-          <a class="navigation__menu-link" href="#" title="About" aria-label="About">
+          <a class="navigation__menu-link" href="#about" title="About" aria-label="About">
             About
           </a>
         </li>
         <li class="navigation__menu-item">
-          <a class="navigation__menu-link" href="#" title="Works" aria-label="Works">
+          <a class="navigation__menu-link" href="#works" title="Works" aria-label="Works">
             Works
           </a>
         </li>
         <li class="navigation__menu-item">
-          <a class="navigation__menu-link" href="#" title="Service" aria-label="Service">
+          <a class="navigation__menu-link" href="#service" title="Service" aria-label="Service">
             Service
           </a>
         </li>

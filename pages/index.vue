@@ -3,6 +3,7 @@
     <navigation />
     <home-header />
     <home-about />
+    <home-services />
   </main>
 </template>
 
@@ -10,6 +11,7 @@
 import Navigation from '@/components/Navigation/Navigation.vue';
 import HomeHeader from '@/components/HomeHeader/HomeHeader.vue';
 import HomeAbout from '@/components/HomeAbout/HomeAbout.vue';
+import HomeServices from '@/components/HomeServices/HomeServices.vue';
 
 export default {
   name: 'home',
@@ -17,6 +19,7 @@ export default {
     Navigation,
     HomeHeader,
     HomeAbout,
+    HomeServices,
   },
 };
 
