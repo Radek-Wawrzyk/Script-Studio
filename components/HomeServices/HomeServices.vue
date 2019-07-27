@@ -1,5 +1,5 @@
 <template>
-  <section class="services">
+  <section class="services" id="services">
     <img class="services__background" src="~/assets/steps.svg" alt="" />
     <div class="container">
       <div class="services__content">

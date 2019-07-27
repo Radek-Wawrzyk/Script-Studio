@@ -34,8 +34,8 @@
           </a>
         </li>
         <li class="navigation__menu-item">
-          <a class="navigation__menu-link" href="#service" title="Service" aria-label="Service">
-            Service
+          <a class="navigation__menu-link" href="#services" title="Service" aria-label="Service">
+            Services
           </a>
         </li>
         <li class="navigation__menu-item">
