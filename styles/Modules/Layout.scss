@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 1rem;
+  &--fluid {
+    max-width: 100%;
+  }
+  &--small {
+    max-width: 1000px;
+  }
+  &--mini {
+    max-width: 800px;
+  }
+}
+
+.section {
+  margin: 2rem 0;
+  position: relative;
+}
