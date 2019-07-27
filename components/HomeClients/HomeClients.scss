@@ -1,0 +1,18 @@
+.clients {
+  position: relative;
+  padding: 5rem 0;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  &__tile {
+    padding: 1rem 2rem;
+    filter: grayscale(100%);
+    &-img {
+      max-width: 250px;
+    }
+  }
+}

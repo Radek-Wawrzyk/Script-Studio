@@ -1,6 +1,6 @@
 .services {
   position: relative;
-  margin: 0 0 1000px;
+  padding: 5rem 0;
   &__header {
     margin: 0 0 3rem 0;
     &-title {
@@ -55,7 +55,7 @@
   &__background {
     position: absolute;
     left: 0;
-    top: -50px;
+    top: calc(-50px + 5rem);
     width: 800px;
   }
 }
