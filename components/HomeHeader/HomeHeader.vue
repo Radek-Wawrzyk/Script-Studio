@@ -9,8 +9,8 @@
           Awesome Software House
         </p>
         <div class="header__actions">
-          <a class="button button--primary" href="#about" aria-title="Go about" title="Go About">
-            Get Started
+          <a class="button button--primary" href="#portfolio" aria-title="Go about" title="Go About">
+            Portfolio
           </a>
         </div>
       </div>
