@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  background: white;
+  border: 2px solid $brand--primary;
+  border-radius: 2rem;
+  padding: 0.7rem 2rem;
+  word-spacing: 5px;
+  font-weight: bold;
+  transition: color 0.25s, background 0.25s, border-color 0.25s;
+  &:hover {
+    cursor: pointer;
+  }
+  &--primary {
+    background: $brand--primary;
+    color: white;
+    box-shadow: 0 30px 20px 10px rgba(125, 83, 222, 0.3);
+    &:hover, &:focus, &:active {
+      background: lighten($brand--primary, 15%);
+      border-color: lighten($brand--primary, 15%);
+      color: white;
+    }
+  }
+}
+
+// Media
+
+@media screen and (max-width: 768px) {
+  .button {
+    &--primary {
+      box-shadow: 0 10px 20px 10px rgba(125, 83, 222, 0.3);
+    }
+  }
+}

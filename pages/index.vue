@@ -1,16 +1,19 @@
 <template>
-  <main class="home">
+  <main class="home page">
     <navigation />
+    <home-header />
   </main>
 </template>
 
 <script>
 import Navigation from '@/components/Navigation/Navigation.vue';
+import HomeHeader from '@/components/HomeHeader/HomeHeader.vue';
 
 export default {
   name: 'home',
   components: {
     Navigation,
+    HomeHeader,
   },
 };
 

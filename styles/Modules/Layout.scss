@@ -17,6 +17,11 @@
   }
 }
 
+.page {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .section {
   margin: 2rem 0;
   position: relative;
