@@ -1,0 +1,6 @@
+.fade-form-enter-active, .fade-form-leave-active {
+  transition: all 0.3s ease-out;
+}
+.fade-form-enter, .fade-form-leave-to {
+  opacity: 0;
+}

@@ -1,0 +1,68 @@
+.contact {
+  position: relative;
+  padding: 5rem 0 10rem 0;
+  &__header {
+    margin: 0 0 2rem 0;
+    &-title {
+      font-size: 2rem;
+      margin: 0 0 1rem 0;
+    }
+    &-description {
+      color: #747474;
+      font-size: 1.2rem;
+    }
+  }
+  &__content {
+    max-width: 600px;
+    width: 100%;
+  }
+  &__button {
+    width: 100%;
+    border-radius: 0.2rem;
+    padding: 1.2rem 1rem;
+    text-transform: uppercase;
+    box-shadow: none;
+  }
+  &__background {
+    position: absolute;
+    right: 1rem;
+  }
+}
+
+// Media
+
+@media screen and (max-width: 1600px) {
+  .contact {
+    &__background {
+      width: 600px;
+      top: 10rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .contact {
+    &__background {
+      width: 600px;
+      top: 10rem;
+      right: -10%;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    &__background {
+      position: static;
+      margin: 0 auto 5rem;
+      display: block;
+      max-width: 600px;
+      width: 100%;
+      padding: 0 2rem;
+    }
+    &__content {
+      margin: 0 auto;
+    }
+  }
+}
+

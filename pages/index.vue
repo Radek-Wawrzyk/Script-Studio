@@ -9,6 +9,7 @@
     />
     <home-services />
     <home-clients />
+    <home-contact />
     <home-footer />
   </main>
 </template>
@@ -21,6 +22,7 @@ import HomeServices from '@/components/HomeServices/HomeServices.vue';
 import HomeSubHeader from '@/components/HomeSubHeader/HomeSubHeader.vue';
 import HomeClients from '@/components/HomeClients/HomeClients.vue';
 import HomeFooter from '@/components/HomeFooter/HomeFooter.vue';
+import HomeContact from '@/components/HomeContact/HomeContact.vue';
 
 export default {
   name: 'home',
@@ -32,6 +34,7 @@ export default {
     HomeSubHeader,
     HomeClients,
     HomeFooter,
+    HomeContact,
   },
 };
 
