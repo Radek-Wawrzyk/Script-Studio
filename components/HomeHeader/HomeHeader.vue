@@ -8,7 +8,7 @@
         Awesome Software House
       </p>
       <div class="header__actions" data-aos="fade-right" data-aos-delay="400">
-        <a class="button button--primary" href="#about" aria-title="Go about" title="Go About">
+        <a @click.prevent="scrollTo('about')" class="button button--primary" href="#about" aria-title="Go about" title="Go About">
           Get started
         </a>
         <!-- <a class="header__link" href="#portfolio" aria-title="Go about" title="Go About">
@@ -18,8 +18,8 @@
     </div>
     <img class="header__background" alt="" src="~/assets/header.svg" />
     <div class="header__actions header__actions--mobile">
-      <a class="button button--primary" href="#portfolio" aria-title="Go about" title="Go About">
-        Portfolio
+      <a class="button button--primary" @click.prevent="scrollTo('portfolio')" href="#portfolio" aria-title="Go about" title="Go About">
+        Get started
       </a>
     </div>
   </header>
@@ -29,6 +29,15 @@
 
 export default {
   name: 'home-header',
+  methods: {
+    scrollTo(parameter) {
+      window.scrollTo({
+        behavior: 'smooth',
+        left: 0,
+        top: document.querySelector(`#${parameter}`).offsetTop,
+      });
+    }
+  }
 };
 
 </script>

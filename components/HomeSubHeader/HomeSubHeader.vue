@@ -5,7 +5,7 @@
       <h2 class="sub-header__title" data-aos="fade-up" data-aos-delay="100">
       {{ content }}
       </h2>
-      <a class="button button--primary" :href="'#' + anchor" data-aos="fade-up" data-aos-delay="200">
+      <a class="button button--primary" @click.prevent="scrollTo(anchor)" :href="'#' + anchor" data-aos="fade-up" data-aos-delay="200">
         Go Services
       </a>
     </div>
@@ -23,6 +23,15 @@ export default {
     anchor: {
       type: String,
       required: false,
+    },
+  },
+   methods: {
+    scrollTo(parameter) {
+      window.scrollTo({
+        behavior: 'smooth',
+        left: 0,
+        top: document.querySelector(`#${parameter}`).offsetTop,
+      });
     },
   },
 };
