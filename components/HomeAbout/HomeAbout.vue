@@ -5,7 +5,7 @@
         Make digital
       </h2>
       <ul class="about__tiles">
-        <li class="about__tile">
+        <li class="about__tile" data-aos="fade-up">
           <h3 class="about__tile-header">
             Technology
           </h3>
@@ -14,7 +14,7 @@
             on digital touchpoints with the user.
           </p>
         </li>
-        <li class="about__tile">
+        <li class="about__tile" data-aos="fade-up" data-aos-delay="200">
           <h3 class="about__tile-header">
             Marketing
           </h3>
@@ -23,7 +23,7 @@
             and media campaigns on digital platforms.
           </p>
         </li>
-        <li class="about__tile about__tile--primary">
+        <li class="about__tile about__tile--primary" data-aos="fade-up" data-aos-delay="400">
           <h3 class="about__tile-header">
             Insight
             <img src="~/assets/icons/data.svg" alt="" class="about__tile-icon"/>
@@ -33,7 +33,7 @@
             develop useful reports for Marketing and Legal departments.
           </p>
         </li>
-        <li class="about__tile">
+        <li class="about__tile" data-aos="fade-up" data-aos-delay="600">
           <h3 class="about__tile-header">
             INNOVATION
           </h3>
@@ -55,4 +55,4 @@ export default {
 
 </script>
 
-<style lang="scss" scoped src="./HomeAbout.scss" />
+<style lang="scss" src="./HomeAbout.scss" />

@@ -13,7 +13,7 @@
           </p>
         </header>
         <ul class="services__list">
-          <li class="services-tile">
+          <li class="services-tile" data-aos="fade-up" data-aos-delay="200">
             <span class="services-tile__icon">
               01
             </span>
@@ -26,7 +26,7 @@
               </p>
             </div>
           </li>
-          <li class="services-tile">
+          <li class="services-tile" data-aos="fade-up" data-aos-delay="300">
             <span class="services-tile__icon">
               02
             </span>
@@ -39,7 +39,7 @@
               </p>
             </div>
           </li>
-          <li class="services-tile">
+          <li class="services-tile" data-aos="fade-up" data-aos-delay="400">
             <span class="services-tile__icon">
               03
             </span>
@@ -52,7 +52,7 @@
               </p>
             </div>
           </li>
-          <li class="services-tile">
+          <li class="services-tile" data-aos="fade-up" data-aos-delay="500">
             <span class="services-tile__icon">
               04
             </span>
@@ -65,7 +65,7 @@
               </p>
             </div>
           </li>
-          <li class="services-tile">
+          <li class="services-tile" data-aos="fade-up" data-aos-delay="600">
             <span class="services-tile__icon">
               05
             </span>
@@ -78,7 +78,7 @@
               </p>
             </div>
           </li>
-          <li class="services-tile">
+          <li class="services-tile" data-aos="fade-up" data-aos-delay="700">
             <span class="services-tile__icon">
               06
             </span>
@@ -91,7 +91,7 @@
               </p>
             </div>
           </li>
-          <li class="services-tile">
+          <li class="services-tile" data-aos="fade-up" data-aos-delay="800">
             <span class="services-tile__icon">
               07
             </span>
@@ -104,7 +104,7 @@
               </p>
             </div>
           </li>
-          <li class="services-tile">
+          <li class="services-tile" data-aos="fade-up" data-aos-delay="900">
             <span class="services-tile__icon">
               08
             </span>
@@ -119,7 +119,6 @@
           </li>
         </ul>
       </div>
-
     </div>
   </section>
 </template>

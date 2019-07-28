@@ -1,13 +1,13 @@
 <template>
   <header class="header" id="home">
     <div class="header__content">
-      <h1 class="header__title">
+      <h1 class="header__title" data-aos="fade-up" data-aos-delay="200">
         Script Studio
       </h1>
-      <p class="header__description">
+      <p class="header__description" data-aos="fade-up" data-aos-delay="300">
         Awesome Software House
       </p>
-      <div class="header__actions">
+      <div class="header__actions" data-aos="fade-up" data-aos-delay="400">
         <a class="button button--primary" href="#about" aria-title="Go about" title="Go About">
           Get started
         </a>

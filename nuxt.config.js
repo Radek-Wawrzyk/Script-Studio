@@ -25,12 +25,14 @@ export default {
   */
   css: [
     './styles/Main.scss',
+    './aos/dist/aos.css',
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
     '@/plugins/VeeValidate',
+    '@/plugins/Aos.js',
   ],
   /*
   ** Nuxt.js dev-modules

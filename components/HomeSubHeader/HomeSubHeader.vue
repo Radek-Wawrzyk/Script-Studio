@@ -1,11 +1,11 @@
 <template>
   <section class="sub-header">
-    <img src="~/assets/bck.svg" alt="" class="sub-header__background" />
+    <img src="~/assets/bck.svg" alt="" class="sub-header__background"/>
     <div class="container">
-      <h2 class="sub-header__title">
+      <h2 class="sub-header__title" data-aos="fade-up" data-aos-delay="100">
       {{ content }}
       </h2>
-      <a class="button button--primary" :href="'#' + anchor">
+      <a class="button button--primary" :href="'#' + anchor" data-aos="fade-up" data-aos-delay="200">
         Go Services
       </a>
     </div>
