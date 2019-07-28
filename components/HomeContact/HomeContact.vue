@@ -86,6 +86,14 @@
               Send a message
             </button>
           </div>
+          <transition name="fade-form">
+            <div class="form__group" v-if="status === 'success'">
+              <span class="form__notification form__notification--success">You have sent a message! We will respond you as fast as we can!</span>
+            </div>
+            <div class="form__group" v-if="status === 'error'">
+              <span class="form__notification form__notification--error">You haven't sent a message! There is a problem with our server</span>
+            </div>
+          </transition>
         </form>
       </div>
     </div>
@@ -103,6 +111,7 @@ export default {
     message: '',
     phone: '',
     privacyData: false,
+    status: null,
   }),
   methods: {
     async submitForm() {
@@ -119,8 +128,10 @@ export default {
         });
 
         console.log(this.response);
+        this.status = 'success';
       } catch (err) {
         console.log(err);
+        this.status = 'error';
       }
     },
   },

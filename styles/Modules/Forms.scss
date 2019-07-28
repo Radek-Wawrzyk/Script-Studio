@@ -86,4 +86,12 @@
     text-decoration: underline;
     color: $brand--primary;
   }
+  &__notification {
+    &--error {
+      color: $error
+    }
+    &--success {
+      color: $brand--primary;
+    }
+  }
 }
