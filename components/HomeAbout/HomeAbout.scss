@@ -1,5 +1,5 @@
 .about {
-  margin: 10rem 0;
+  padding: 10rem 0;
   &__header {
     font-size: 3rem;
     margin: 0 0 6rem 2rem;
@@ -45,11 +45,13 @@
 }
 
 // Media
+@media screen and (max-width: 1440px)  {
+  .about {
+    padding: 5rem 0 0;
+  }
+}
 
 @media screen and (max-width: 1200px) {
-  .about__header {
-    margin: 0 0 3rem 0;
-  }
   .about__tiles {
     grid-template-columns: repeat(2, 1fr);
   }

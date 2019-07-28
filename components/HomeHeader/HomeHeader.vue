@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header" id="home">
     <div class="header__content">
       <h1 class="header__title">
         Script Studio

@@ -16,14 +16,30 @@
       <span class="navigation__button-bar"></span>
       <span class="navigation__button-bar"></span>
     </button>
-    <ul class="navigation__menu" :class="{'navigation__menu--active': menuStatus}">
+    <ul
+      class="navigation__menu"
+      :class="{'navigation__menu--active': menuStatus}"
+      :aria-expanded="menuStatus ? 'true' : 'false'"
+    >
       <li class="navigation__menu-item">
-        <a class="navigation__menu-link" href="#" title="Home" aria-label="Home">
+        <a
+          class="navigation__menu-link"
+          href="#"
+          title="Home"
+          aria-label="Home"
+          @click.prevent="handleClick('home')"
+        >
           Home
         </a>
       </li>
       <li class="navigation__menu-item">
-        <a class="navigation__menu-link" href="#about" title="About" aria-label="About">
+        <a
+          class="navigation__menu-link"
+          href="#"
+          title="About"
+          aria-label="About"
+          @click.prevent="handleClick('about')"
+        >
           About
         </a>
       </li>
@@ -33,12 +49,23 @@
         </a>
       </li> -->
       <li class="navigation__menu-item">
-        <a class="navigation__menu-link" href="#services" title="Service" aria-label="Service">
+        <a
+          class="navigation__menu-link"
+          href="#" title="Service"
+          aria-label="Service"
+          @click.prevent="handleClick('services')"
+         >
           Services
         </a>
       </li>
       <li class="navigation__menu-item">
-        <a class="navigation__menu-link navigation__menu-link--primary" href="#contact" title="Contact" aria-label="Contact">
+        <a
+          class="navigation__menu-link navigation__menu-link--primary"
+          href="#contact"
+          title="Contact"
+          aria-label="Contact"
+          @click.prevent="handleClick('contact')"
+        >
           Contact Us
         </a>
       </li>
@@ -56,6 +83,15 @@ export default {
   methods: {
     toggleMenu() {
       this.menuStatus = !this.menuStatus;
+    },
+    handleClick(parameter) {
+      window.scrollTo({
+        behavior: 'smooth',
+        left: 0,
+        top: document.querySelector(`#${parameter}`).offsetTop,
+      });
+
+      this.menuStatus === true ? this.menuStatus = false : false;
     },
   },
 };
