@@ -36,8 +36,8 @@ export default {
         left: 0,
         top: document.querySelector(`#${parameter}`).offsetTop,
       });
-    }
-  }
+    },
+  },
 };
 
 </script>
