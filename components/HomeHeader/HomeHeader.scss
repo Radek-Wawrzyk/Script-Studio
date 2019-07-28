@@ -71,6 +71,7 @@
     flex-direction: column;
     height: auto;
     padding: 5rem 0 0 0;
+    margin: 0;
     &__content {
       width: 100%;
       max-width: 500px;
@@ -84,6 +85,7 @@
       width: 200px;
       height: auto;
       margin: 0 0 1rem 0;
+
     }
     &__title {
       font-size: 2.5rem;
@@ -98,6 +100,13 @@
     }
     &__description {
       font-size: 1.1rem;
+      margin: 0;
+    }
+    &__actions {
+      display: none;
+      &--mobile {
+        display: block;
+      }
     }
   }
 }

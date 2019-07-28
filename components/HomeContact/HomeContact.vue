@@ -41,6 +41,14 @@
             </transition>
           </div>
           <div class="form__group">
+            <input
+              class="form__input"
+              name="phone"
+              placeholder="Phone number"
+              v-model="phone"
+            />
+          </div>
+          <div class="form__group">
             <textarea
               class="form__textarea"
               name="message"
@@ -93,6 +101,7 @@ export default {
     fullname: '',
     email: '',
     message: '',
+    phone: '',
     privacyData: false,
   }),
   methods: {
@@ -106,6 +115,7 @@ export default {
           fullName: this.fullname,
           email: this.email,
           message: this.message,
+          phone: this.phone,
         });
 
         console.log(this.response);

@@ -16,6 +16,11 @@
       </div>
     </div>
     <img class="header__background" alt="" src="~/assets/header.svg" />
+     <div class="header__actions header__actions--mobile">
+        <a class="button button--primary" href="#portfolio" aria-title="Go about" title="Go About">
+          Portfolio
+        </a>
+      </div>
   </header>
 </template>
 

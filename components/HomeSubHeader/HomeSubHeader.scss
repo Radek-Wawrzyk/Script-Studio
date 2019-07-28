@@ -26,9 +26,16 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .sub-header {
+   padding: 10rem 0;
+   margin: 0;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .sub-header {
-    margin: 10rem 0;
+    padding: 5rem 0;
     &__title {
       font-size: 1.5rem;
       max-width: 100%;
