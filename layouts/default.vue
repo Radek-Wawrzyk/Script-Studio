@@ -14,6 +14,7 @@ export default {
       if (process.browser) {
         AOS.init({
            once: true,
+           duration: 1000,
         });
       }
     }
