@@ -1,5 +1,5 @@
 <template>
-  <section class="contact">
+  <section class="contact" id="contact">
     <img src="~/assets/contact.svg" alt="" class="contact__background" />
     <div class="container">
       <div class="contact__content">

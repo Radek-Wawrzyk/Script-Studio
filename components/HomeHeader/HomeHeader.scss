@@ -1,7 +1,7 @@
 .header {
   height: 100vh;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,8 +10,16 @@
   &__content {
     width: 700px;
   }
-  &__logo {
-    margin: 0 0 1rem 2rem;
+  &__link {
+    margin: 0 0 0 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #3F3D56;
+    &:hover, &:focus {
+      color: $brand--primary;
+    }
   }
   &__title {
     font-size: 6rem;
@@ -25,9 +33,14 @@
   }
   &__background {
     position: absolute;
-    left: 60%;
-    top: 100px;
+    left: 50%;
+    top: 50px;
     width: 1200px;
+  }
+  &__actions {
+    &--mobile {
+      display: none;
+    }
   }
 }
 
@@ -96,7 +109,7 @@
       max-width: 800px;
       position: static;
       padding: 0 0 0 5rem;
-      margin: -2rem 0 0 0;
+      margin: -5rem 0 0 0;
     }
     &__description {
       font-size: 1.1rem;
@@ -108,5 +121,11 @@
         display: block;
       }
     }
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .header__background {
+    margin: -2rem 0 0 0;
   }
 }

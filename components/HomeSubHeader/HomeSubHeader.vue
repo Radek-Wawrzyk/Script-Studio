@@ -6,7 +6,7 @@
       {{ content }}
       </h2>
       <a class="button button--primary" :href="'#' + anchor">
-        Get started
+        Go Services
       </a>
     </div>
   </section>
