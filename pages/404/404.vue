@@ -32,4 +32,4 @@ export default {
 
 </script>
 
-<style lang="scss" scoped src="./error.scss" />
+<style lang="scss" scoped src="./404.scss" />

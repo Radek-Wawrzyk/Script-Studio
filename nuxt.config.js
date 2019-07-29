@@ -46,14 +46,19 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/axios',
   ],
-  /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
   styleResources: {
     scss: [
       './styles/Modules/Variables.scss' // use underscore "_" & also file extension ".scss"
     ],
+  },
+  router: {
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: 'error',
+        path: '*',
+        component: resolve(__dirname, 'pages/404/404.vue'),
+      });
+    },
   },
   axios: {
   },
