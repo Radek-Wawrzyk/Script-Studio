@@ -4,3 +4,12 @@
 .fade-form-enter, .fade-form-leave-to {
   opacity: 0;
 }
+
+.fade-page {
+  &-enter-active {
+    transition: all 0.5s ease-out;
+  }
+  &-enter, &-leave-to {
+    opacity: 0;
+  }
+}

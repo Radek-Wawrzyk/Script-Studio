@@ -1,6 +1,8 @@
 <template>
   <div>
-    <nuxt />
+    <transition name="fade-page" mode="out-in">
+      <nuxt />
+    </transition>
   </div>
 </template>
 
