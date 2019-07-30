@@ -8,7 +8,7 @@
             Customer journey
           </h3>
           <p class="services__header-description">
-            I always follow professional Workflow and provide You
+            We always follow professional Workflow and provide You
             best service with resealable costs.
           </p>
         </header>
