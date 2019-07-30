@@ -11,8 +11,8 @@
             We can't wait to work with You on something cool!
           </p>
         </header>
-        <form class="contact__form" @submit.prevent="submitForm">
-          <div class="form__group" data-aos="fade-up" data-aos-delay="100">
+        <form class="contact__form" @submit.prevent="submitForm" data-aos="fade-up" data-aos-delay="100">
+          <div class="form__group">
             <input
               class="form__input"
               name="fullname"
@@ -26,7 +26,7 @@
               </span>
             </transition>
           </div>
-          <div class="form__group" data-aos="fade-up" data-aos-delay="200">
+          <div class="form__group">
             <input
               class="form__input"
               name="email"
@@ -40,7 +40,7 @@
               </span>
             </transition>
           </div>
-          <div class="form__group" data-aos="fade-up" data-aos-delay="300">
+          <div class="form__group">
             <input
               class="form__input"
               name="phone"
@@ -48,7 +48,7 @@
               v-model="phone"
             />
           </div>
-          <div class="form__group" data-aos="fade-up" data-aos-delay="400">
+          <div class="form__group">
             <textarea
               class="form__textarea"
               name="message"
@@ -67,7 +67,7 @@
               </span>
             </transition>
           </div>
-          <div class="form__group" data-aos="fade-up" data-aos-delay="500">
+          <div class="form__group">
             <input class="form__checkbox" id="styled-checkbox-2" name="privacy" v-validate="'required'" type="checkbox" v-model="privacyData" />
             <label class="form__checkbox-label" for="styled-checkbox-2">
               I have accepted the
@@ -81,7 +81,7 @@
               </span>
             </transition>
           </div>
-          <div class="form__group" data-aos="fade-up" data-aos-delay="600">
+          <div class="form__group">
             <button class="button button--primary contact__button">
               Send a message
             </button>

@@ -43,6 +43,46 @@
   }
 }
 
+//Animation
+
+#Path_1919, #Path_1920, #Path_1921 {
+  transition: all 1.2s;
+  will-change: transform, opacity;
+  opacity: 0.007;
+  &.active {
+    opacity: 0.4;
+  }
+}
+
+// Circles
+
+#Ellipse_162, #Ellipse_163, #Ellipse_164,
+#Ellipse_165, #Ellipse_166 {
+  transition: opacity 1s;
+  transition-delay: 1.2s;
+  &.active {
+    opacity: 1;
+  }
+}
+
+#Ellipse_163 {
+  transition-delay: 0.4s;
+}
+#Ellipse_165 {
+  transition-delay: 0.6s;
+}
+#Ellipse_166 {
+  transition-delay: 0.8s;
+}
+#Ellipse_164 {
+  transition-delay: 1s;
+}
+
+
+#Ellipse_163 {
+  transition-delay: 0.4s;
+}
+
 // Media
 
 @media screen and (max-width: 1600px) {
