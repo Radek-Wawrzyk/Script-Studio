@@ -1,15 +1,15 @@
 <template>
   <section class="clients">
     <ul class="clients__list">
-      <li class="clients__tile">
+      <!--<li class="clients__tile">
         <img class="clients__tile-img" src="~/assets/clients/huaris.png" alt="Huaris logo" />
-      </li>
+      </li>-->
       <li class="clients__tile">
         <img class="clients__tile-img" src="~/assets/clients/petrolConsulting.svg" alt="Petrol Consulting logo" />
       </li>
-      <li class="clients__tile">
+      <!--<li class="clients__tile">
         <img class="client__tile-img" src="~/assets/clients/perpectiva.png" alt="Perpectivalogo" />
-      </li>
+      </li>-->
     </ul>
   </section>
 </template>
