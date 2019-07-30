@@ -1,5 +1,5 @@
 <template>
-  <nav class="navigation" ref="navigation">
+  <nav class="navigation" ref="navigation" :class="{'navigation--active' : scrollPosition > 140}">
     <figure class="navigation__logo">
       <a href="#" title="home" aria-label="home">
         <img class="navigation__logo-img" alt="SpaceJobs" src="~/assets/logo.svg" />
@@ -79,10 +79,14 @@ export default {
   name: 'navigation',
   data: () => ({
     menuStatus: false,
+    scrollPosition: null,
   }),
   methods: {
     toggleMenu() {
       this.menuStatus = !this.menuStatus;
+    },
+    handleScroll() {
+      this.scrollPosition =  window.scrollY;
     },
     handleClick(parameter) {
       window.scrollTo({
@@ -94,6 +98,9 @@ export default {
       this.menuStatus === true ? this.menuStatus = false : false;
     },
   },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
 };
 
 </script>
